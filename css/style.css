@@ -1,0 +1,96 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  font-size: 62.5%;
+  height: 100vh;
+  background-color: rgba(255, 239, 246);
+  color: white;
+  font-family: 'Kanit', sans-serif;
+}
+main{
+  background-image: linear-gradient(rgba(70, 45, 83, 0.64), rgba(255, 239, 246)), url("../img/icecube.jpg");
+  background-size: cover; 
+  padding: 1% 15% 3%;
+}
+h1{
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+h2, h3{
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+h3{
+  font-size: 1.5rem;
+}
+p{
+  font-size: 1rem;
+}
+h3, p{
+  color: rgba(70, 45, 83);
+}
+img{
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.form__group {
+  position: relative;
+  width: 45%;
+}
+
+.form__field {
+  width: 50%;
+  border: 0;
+  border-bottom: 2px solid rgba(70, 45, 83);
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 2px;
+  border-color: white;
+}
+ 
+.btn{
+  background-image: linear-gradient(to right, rgba(70, 45, 83) 0%, #ef3869  51%, rgba(70, 45, 83)  100%);
+  margin-left: 10px;
+  padding: 8px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: 3px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 10px;
+  border: none;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
